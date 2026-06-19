@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Management Dashboard</title>
+  <link rel="stylesheet" href="src/assets/css/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Student Management Dashboard</h1>
+    <p>Manage students with a professional project structure.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Add Student</h2>
+
+      <form id="student-form" class="student-form">
+        <div class="form-group">
+          <label for="student-name">Full Name</label>
+          <input id="student-name" type="text" placeholder="Example: Ahmed Ali" />
+        </div>
+
+        <div class="form-group">
+          <label for="student-email">Email</label>
+          <input id="student-email" type="email" placeholder="student@example.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="student-major">Major</label>
+          <input id="student-major" type="text" placeholder="Example: Computer Science" />
+        </div>
+
+        <button type="submit">Add Student</button>
+      </form>
+
+      <p id="form-message" class="message"></p>
+    </section>
+
+    <section class="card">
+      <div class="section-header">
+        <h2>Students</h2>
+        <input id="search-input" type="search" placeholder="Search students..." />
+      </div>
+
+      <div id="students-list" class="students-list"></div>
+    </section>
+  </main>
+
+  <script type="module" src="src/assets/js/main.js"></script>
+</body>
+</html>
